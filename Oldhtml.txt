@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Science e-Module</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">UPI-<span>BOUN</span></a>
+
+      <div class="navbar-nav">
+        <a href="#beranda">Beranda</a>
+        <a href="#instructions">Pedoman</a>
+        <a href="#E-Module">E-Module</a>
+        <a href="#simulasi">Simulasi</a>
+      </div>
+
+      <div class="navbar-extra">
+        <div class="lang-menu">English</div>
+        <ul>
+          <li>
+            <a>English</a>
+          </li>
+          <li>
+            <a>Indonesi</a>
+          </li>
+          <li>
+            <a>Turkish</a>
+          </li>
+        </ul>
+        <!-- <a href="#beranda" id="arrow-left-circle"
+          ><i data-feather="arrow-left-circle"></i
+        ></a> -->
+        <!-- <a href="#simulasi" id="arrow-right-circle"
+          ><i data-feather="arrow-right-circle"></i
+        ></a> -->
+        <a href="#" id="menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Hero Section Start -->
+    <section class="hero" id="beranda">
+      <main class="content">
+        <h1>Mari Belajar <span>Sistem Optik</span></h1>
+        <p class="hp">
+          Media pembelajaran Sistem Optik terdiri dari
+          <span class="hpedom">Pedoman </span>penggunaan media,
+          <span class="hemodule">E-Module</span>, dan
+          <span class="hsimulasi">Simulasi</span> Sistem Optik.
+        </p>
+        <a href="#instructions" class="cta"
+          ><strong>Belajar Sekarang</strong></a
+        >
+      </main>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Pedoman Section Start -->
+    <section id="instructions" class="Pedoman">
+      <h2><span>Pedoman</span> Penggunaan Media</h2>
+      <div class="row">
+        <div class="pedoman-img">
+          <img src="img/Optik2(3).jpg" alt="Pedoman" />
+        </div>
+        <div class="content">
+          <h3>Kenapa</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae quis
+            in placeat quam quaerat, autem vel at fuga magni laborum ipsa
+            consectetur necessitatibus quisquam veritatis voluptatem inventore
+            sed! Autem, molestias?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
+            perferendis dolore provident non dolor assumenda officia.
+            Repellendus, iste rem doloribus repellat eos assumenda ipsum
+            accusantium, inventore corporis impedit velit illo.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Pedoman Section End -->
+    <!-- E-Module Section Start -->
+    <section id="E-Module" class="emodule">
+      <h2><span>Science</span> E-Module</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto veniam
+        odio repudiandae aspernatur! Quis, inventore.
+      </p>
+      <div class="row">
+        <div class="emodulepics">
+          <img
+            src="img/menu/1(Concave).jpg"
+            alt="mirror"
+            class="emodulepics-img"
+          />
+          <h3 class="emodulepics-title">- Lensa Cekung -</h3>
+          <p class="emodulepics-sifat">Maya, Tegak</p>
+        </div>
+        <div class="emodulepics">
+          <img
+            src="img/menu/2(Convex).jpg"
+            alt="mirror"
+            class="emodulepics-img"
+          />
+          <h3 class="emodulepics-title">- Lensa Cembung -</h3>
+          <p class="emodulepics-sifat">Maya, Tegak</p>
+        </div>
+        <div class="emodulepics">
+          <img
+            src="img/menu/3(Concave).jpg"
+            alt="mirror"
+            class="emodulepics-img"
+          />
+          <h3 class="emodulepics-title">- Cermin Cekung -</h3>
+          <p class="emodulepics-sifat">Maya, Tegak</p>
+        </div>
+        <div class="emodulepics">
+          <img
+            src="img/menu/4(Convex).jpg"
+            alt="mirror"
+            class="emodulepics-img"
+          />
+          <h3 class="emodulepics-title">- Cermin Cembung -</h3>
+          <p class="emodulepics-sifat">Maya, Tegak</p>
+        </div>
+        <div class="emodulepics">
+          <img
+            src="img/menu/4(Convex).jpg"
+            alt="mirror"
+            class="emodulepics-img"
+          />
+          <h3 class="emodulepics-title">- Cermin Cembung -</h3>
+          <p class="emodulepics-sifat">Maya, Tegak</p>
+        </div>
+      </div>
+      <div class="form">
+        <form action="">
+          <div class="input-hip">
+            <i data-feather="x-circle"></i>
+            <input type="text" placeholder="Hipotesis Nol" />
+          </div>
+          <div class="input-hip">
+            <i data-feather="circle"></i>
+            <input type="text" placeholder="Hipotesis Alternatif" />
+          </div>
+          <button type="submit" class="btn">Ajukan Hipotesis</button>
+        </form>
+      </div>
+    </section>
+    <!-- E-Module Section End -->
+    <!-- Simulasi Section Start -->
+    <section id="simulasi" class="simulasi">
+      <h2><span>Simulasi</span> Sistem Optik</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto veniam
+        odio repudiandae aspernatur! Quis, inventore.
+      </p>
+      <div class="row">
+        <iframe
+          src="https://javalab.org/en/lens_en/"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="javalab"
+        ></iframe>
+      </div>
+      <div class="row">
+        <iframe
+          src="https://phet.colorado.edu/sims/html/geometric-optics/latest/geometric-optics_all.html"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="javalab"
+        ></iframe>
+      </div>
+      <div class="row">
+        <iframe
+          src="https://www.geogebra.org/material/iframe/id/685665/width/1300/height/700/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="javalab"
+        ></iframe>
+      </div>
+      <div class="row">
+        <iframe
+          src="https://javalab.org/en/cassegrain_reflector_en/"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="javalab"
+        ></iframe>
+      </div>
+      <div class="row">
+        <iframe
+          src="https://javalab.org/en/refracting_telescope_en/"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="javalab"
+        ></iframe>
+      </div>
+      <div class="row">
+        <iframe
+          src="https://javalab.org/en/newtonian_reflector_en/"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="javalab"
+        ></iframe>
+      </div>
+      <div class="form">
+        <form action="">
+          <div class="input-hip">
+            <i data-feather="x-circle"></i>
+            <input type="text" placeholder="Hipotesis Nol" />
+          </div>
+          <div class="input-hip">
+            <i data-feather="circle"></i>
+            <input type="text" placeholder="Hipotesis Alternatif" />
+          </div>
+          <button type="submit" class="btn">Ajukan Hipotesis</button>
+        </form>
+      </div>
+    </section>
+    <!-- Simulasi Section End -->
+    <!-- Footer Start -->
+    <footer>
+      <div class="socials">
+        <a href="#"><i id="ig" class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i id="rg" class="fa-brands fa-researchgate"></i></a>
+      </div>
+      <div class="links">
+        <a href="#beranda">Beranda</a>
+        <a href="#instructions">Pedoman</a>
+        <a href="#E-Module">E-Module</a>
+        <a href="#simulasi">Simulasi</a>
+      </div>
+      <div class="credit">
+        <p>Created by <a href="">Zeta-(UPI-Boun)</a>. | &copy; 2024.</p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <!-- Feather Icons  -->
+    <script>
+      feather.replace();
+    </script>
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
