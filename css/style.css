@@ -399,6 +399,14 @@ body {
   font-weight: bolder;
 }
 
+#errorNotification {
+  background-color: var(--primary);
+}
+
+#errorNotification1 {
+  background-color: var(--primary);
+}
+
 /* Simulasi Section */
 .simulasi .row {
   display: flex;

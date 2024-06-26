@@ -192,7 +192,7 @@
         <div
           id="errorNotification"
           class="notification"
-          style="display: none; color: red"
+          style="display: none; color: white"
         >
           Telah terjadi kesalahan, mohon <span>kirim ulang jawaban</span> !
         </div>
@@ -261,17 +261,42 @@
         ></iframe>
       </div>
       <div class="form">
-        <form action="">
+        <form name="FormJawaban1" id="formJawaban">
           <div class="input-hip">
             <i data-feather="x-circle"></i>
-            <input type="text" placeholder="Hipotesis Nol" />
+            <input
+              type="text"
+              placeholder="Hipotesis Nol"
+              name="h01"
+              id="h01"
+            />
           </div>
           <div class="input-hip">
             <i data-feather="circle"></i>
-            <input type="text" placeholder="Hipotesis Alternatif" />
+            <input
+              type="text"
+              placeholder="Hipotesis Alternatif"
+              name="h11"
+              id="h11"
+            />
           </div>
-          <button type="submit" class="btn">Ajukan Hipotesis</button>
+          <button type="submit" class="btn" id="submitButton1" disabled>
+            Ajukan Hipotesis
+          </button>
         </form>
+        <button id="loadingButton1" class="btn" style="display: none">
+          Memuat...
+        </button>
+        <div id="notification1" class="notification" style="display: none">
+          Jawaban anda telah <span>direkam</span>!
+        </div>
+        <div
+          id="errorNotification1"
+          class="notification"
+          style="display: none; color: white"
+        >
+          Telah terjadi kesalahan, mohon <span>kirim ulang jawaban</span> !
+        </div>
       </div>
     </section>
     <!-- Simulasi Section End -->
