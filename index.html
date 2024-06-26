@@ -165,17 +165,37 @@
         </div>
       </div>
       <div class="form">
-        <form action="">
+        <form name="FormJawaban" id="formJawaban">
           <div class="input-hip">
             <i data-feather="x-circle"></i>
-            <input type="text" placeholder="Hipotesis Nol" />
+            <input type="text" placeholder="Hipotesis Nol" name="h0" id="h0" />
           </div>
           <div class="input-hip">
             <i data-feather="circle"></i>
-            <input type="text" placeholder="Hipotesis Alternatif" />
+            <input
+              type="text"
+              placeholder="Hipotesis Alternatif"
+              name="h1"
+              id="h1"
+            />
           </div>
-          <button type="submit" class="btn">Ajukan Hipotesis</button>
+          <button type="submit" class="btn" id="submitButton" disabled>
+            Ajukan Hipotesis
+          </button>
         </form>
+        <button id="loadingButton" class="btn" style="display: none">
+          Memuat...
+        </button>
+        <div id="notification" class="notification" style="display: none">
+          Jawaban anda telah <span>direkam</span>!
+        </div>
+        <div
+          id="errorNotification"
+          class="notification"
+          style="display: none; color: red"
+        >
+          Telah terjadi kesalah, mohon <span>kirim ulang jawaban</span> !
+        </div>
       </div>
     </section>
     <!-- E-Module Section End -->
@@ -278,5 +298,18 @@
     </script>
     <!-- My Javascript -->
     <script src="js/script.js"></script>
+
+    <!-- <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzU9kijGGTyLaBcPDycNVuTAgXmdsXhCG0TvdoRztHb48vKf1lS7qdpT1rg5XKGtVoB/exec";
+      const form = document.forms["FormJawaban"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script> -->
   </body>
 </html>
