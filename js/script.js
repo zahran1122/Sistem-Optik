@@ -15,45 +15,45 @@ document.addEventListener("click", function (e) {
   }
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const h0Input = document.getElementById("h0");
-  const h1Input = document.getElementById("h1");
-  const submitButton = document.getElementById("submitButton");
+// document.addEventListener("DOMContentLoaded", function () {
+//   const h0Input = document.getElementById("h0");
+//   const h1Input = document.getElementById("h1");
+//   const submitButton = document.getElementById("submitButton");
 
-  function checkInputs() {
-    if (h0Input.value.trim() !== "" && h1Input.value.trim() !== "") {
-      submitButton.disabled = false;
-    } else {
-      submitButton.disabled = true;
-    }
-  }
+//   function checkInputs() {
+//     if (h0Input.value.trim() !== "" && h1Input.value.trim() !== "") {
+//       submitButton.disabled = false;
+//     } else {
+//       submitButton.disabled = true;
+//     }
+//   }
 
-  h0Input.addEventListener("input", checkInputs);
-  h1Input.addEventListener("input", checkInputs);
+//   h0Input.addEventListener("input", checkInputs);
+//   h1Input.addEventListener("input", checkInputs);
 
-  document
-    .getElementById("formJawaban")
-    .addEventListener("submit", function (event) {
-      event.preventDefault();
+//   document
+//     .getElementById("formJawaban")
+//     .addEventListener("submit", function (event) {
+//       event.preventDefault();
 
-      // Hide the submit button and show the loading button
-      submitButton.style.display = "none";
-      document.getElementById("loadingButton").style.display = "inline-block";
+//       // Hide the submit button and show the loading button
+//       submitButton.style.display = "none";
+//       document.getElementById("loadingButton").style.display = "inline-block";
 
-      // Simulate form submission
-      setTimeout(function () {
-        // Hide the loading button and show the submit button
-        document.getElementById("loadingButton").style.display = "none";
-        submitButton.style.display = "inline-block";
+//       // Simulate form submission
+//       setTimeout(function () {
+//         // Hide the loading button and show the submit button
+//         document.getElementById("loadingButton").style.display = "none";
+//         submitButton.style.display = "inline-block";
 
-        // Show the success notification
-        document.getElementById("notification").style.display = "block";
-      }, 2000); // Simulate a 2 second delay for form submission
-    });
+//         // Show the success notification
+//         document.getElementById("notification").style.display = "block";
+//       }, 2000); // Simulate a 2 second delay for form submission
+//     });
 
-  // Initial check
-  checkInputs();
-});
+//   // Initial check
+//   checkInputs();
+// });
 
 document.addEventListener("DOMContentLoaded", function () {
   const h0Input = document.getElementById("h0");
