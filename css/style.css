@@ -320,42 +320,6 @@ body {
   line-height: 1.6;
 }
 
-/* .emodule .t-mod {
-  border-style: ridge;
-  background-color: black;
-  color: var(--primary);
-}
-
-.emodule .t-mod .tr-mod th {
-  text-align: center;
-  background-color: lightblue;
-} */
-/* Ensure the body and html elements take full width */
-/* html, body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-section#E-Module {
-  width: 100%;
-  height: 100%;
-} */
-
-/* .emodule {
-  width: 100%;
-  height: 100%;
-  border-style: ridge;
-  background-color: black;
-  color: var(--primary);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  box-sizing: border-box;
-} */
-
 .header_fixed {
   max-height: 100vh;
   width: 100%;
@@ -386,36 +350,22 @@ td {
   border-bottom: 1px solid #dddddd;
   padding: 10px 20px;
   font-size: 1.5rem;
+  text-align: justify;
 }
 
-td img {
-  height: 60px;
-  width: 60px;
-  border-radius: 100%;
-  border: 5px solid #e6e7e8;
+.tp {
+  margin-top: 0.4em;
 }
 
 tr:nth-child(odd) {
   background-color: var(--primary1);
 }
-
-/* tr:nth-child(even) {
-  background-color: var(--primary1);
-} */
 
 tr:hover td {
   color: #ffffff;
   background-color: var(--primary);
 }
 
-/* td button {
-  border: none;
-  padding: 7px 20px;
-  border-radius: 20px;
-  background-color: black;
-  color: #e6e7e8;
-} */
-
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -428,73 +378,21 @@ tr:hover td {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
-/* table {
-  width: 100%;
-  border-collapse: collapse;
+.pemantulan {
+  margin-top: 3em;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-.header_fixed {
-  max-height: 100vh;
-  width: 100%;
-  overflow: auto;
-  border: 1px solid #dddddd;
+.pemantulan h2 {
+  font-size: 2.5em;
+  justify-content: center;
+  background-color: var(--primary);
 }
 
-.header_fixed thead th {
-  position: sticky;
-  top: 0;
-  background-color: black;
-  color: #e6e7e8;
-  font-size: 15px;
+.pemantulan h2 span {
+  color: var(--primary1);
 }
-
-th,
-td {
-  border-bottom: 1px solid #dddddd;
-  padding: 10px 20px;
-  font-size: 14px;
-}
-
-td img {
-  height: 60px;
-  width: 60px;
-  border-radius: 100%;
-  border: 5px solid #e6e7e8;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-
-tr:nth-child(odd) {
-  background-color: #edeef1;
-}
-
-tr:hover td {
-  color: #44b478;
-  cursor: pointer;
-  background-color: #ffffff;
-}
-
-td button {
-  border: none;
-  padding: 7px 20px;
-  border-radius: 20px;
-  background-color: black;
-  color: #e6e7e8;
-}
-
-::-webkit-scrollbar {
-  width: 6px;
-}
-
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-::-webkit-scrollbar-thumb {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-} */
 
 .emodule .row {
   display: flex;
@@ -518,7 +416,7 @@ td button {
 }
 .emodule .form {
   flex: 1 1 30rem;
-  padding: 5rem 2rem;
+  padding: 1rem 2rem;
   text-align: center;
 }
 .emodule .form .input-hip {
@@ -604,6 +502,70 @@ td button {
   width: 100%;
   object-fit: cover;
 }
+.simulasi .interactive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.simulasi .interactive .javalab1 {
+  width: 100%;
+  height: 500px; /* Adjusted height */
+  object-fit: cover; /* Ensures the content fills the container without stretching */
+  background-color: #222; /* Placeholder background color */
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+.simulasi .interactive #elabBtn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: var(--primary1);
+  background-color: var(--primary);
+  border-radius: 40px;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  cursor: pointer;
+}
+.simulasi #elabBtn:hover {
+  background-color: var(--primary1);
+  padding: 2%;
+  /* width: 100%; */
+  /*  margin-left: 20px; */
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  border-radius: 40px;
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: var(--primary);
+}
+.simulasi .interactive #closeBtn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: var(--primary1);
+  background-color: var(--primary);
+  border-radius: 40px;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  cursor: pointer;
+}
+.simulasi #closeBtn:hover {
+  background-color: var(--primary1);
+  padding: 2%;
+  /* width: 100%; */
+  /*  margin-left: 20px; */
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  border-radius: 40px;
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: var(--primary);
+}
+
 .simulasi .form {
   flex: 1 1 30rem;
   padding: 5rem 2rem;

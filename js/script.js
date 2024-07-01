@@ -168,3 +168,19 @@ document.addEventListener("DOMContentLoaded", function () {
   // Initial check
   checkInputs();
 });
+
+function toggleIframe() {
+  const iframe = document.getElementById("javalabIframe");
+  const elabBtn = document.getElementById("elabBtn");
+  const closeBtn = document.getElementById("closeBtn");
+
+  if (iframe.style.display === "none" || iframe.style.display === "") {
+    iframe.style.display = "block";
+    elabBtn.style.display = "none";
+    closeBtn.style.display = "inline-block";
+  } else {
+    iframe.style.display = "none";
+    elabBtn.style.display = "inline-block";
+    closeBtn.style.display = "none";
+  }
+}
