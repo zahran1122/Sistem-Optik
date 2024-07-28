@@ -56,6 +56,7 @@ document.addEventListener("click", function (e) {
 // });
 
 document.addEventListener("DOMContentLoaded", function () {
+  const emailInput = document.getElementById("email");
   const h0Input = document.getElementById("h0");
   const h1Input = document.getElementById("h1");
   const submitButton = document.getElementById("submitButton");
@@ -67,13 +68,18 @@ document.addEventListener("DOMContentLoaded", function () {
     "https://script.google.com/macros/s/AKfycbzU9kijGGTyLaBcPDycNVuTAgXmdsXhCG0TvdoRztHb48vKf1lS7qdpT1rg5XKGtVoB/exec";
 
   function checkInputs() {
-    if (h0Input.value.trim() !== "" && h1Input.value.trim() !== "") {
+    if (
+      emailInput.value.trim() !== "" &&
+      h0Input.value.trim() !== "" &&
+      h1Input.value.trim() !== ""
+    ) {
       submitButton.disabled = false;
     } else {
       submitButton.disabled = true;
     }
   }
 
+  emailInput.addEventListener("input", checkInputs);
   h0Input.addEventListener("input", checkInputs);
   h1Input.addEventListener("input", checkInputs);
 
@@ -88,8 +94,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Perform the form submission
     fetch(scriptURL, { method: "POST", body: new FormData(form) })
-      .then((response) => {
-        console.log("Success!", response);
+      .then((response) => response.json()) // Parse response as JSON
+      .then((data) => {
+        console.log("Success!", data);
         // Hide the loading button and show the submit button
         loadingButton.style.display = "none";
         submitButton.style.display = "inline-block";

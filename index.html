@@ -163,9 +163,10 @@
       <div class="pemantulan">
         <h2>Bagian 1: <span>Pemantulan</span> Cahaya</h2>
         <p>
-          Perhatikan gambar di bawah. Menurut kalian, apakah ini gambar dua
-          orang yang kembar identik atau ini adalah hasil pencerminan? Cobalah
-          untuk menjelaskan menggunakan pengetahuan yang kalian miliki saat ini.
+          Perhatikan gambar di bawah. Menurut kalian, apakah ini merupakan
+          gambar dua orang yang kembar identik atau gambar hasil pencerminan?
+          Cobalah untuk menjelaskan menggunakan pengetahuan yang kalian miliki
+          saat ini.
         </p>
         <div class="row">
           <div class="emodulepics">
@@ -213,12 +214,23 @@
         <div class="form">
           <form name="FormJawaban" id="formJawaban">
             <div class="input-hip">
+              <i data-feather="mail"></i>
+              <input
+                type="email"
+                placeholder="Enter your email"
+                name="email"
+                id="email"
+                required
+              />
+            </div>
+            <div class="input-hip">
               <i data-feather="x-circle"></i>
               <input
                 type="text"
                 placeholder="Hipotesis Nol"
                 name="h0"
                 id="h0"
+                required
               />
             </div>
             <div class="input-hip">
@@ -228,6 +240,7 @@
                 placeholder="Hipotesis Alternatif"
                 name="h1"
                 id="h1"
+                required
               />
             </div>
             <button type="submit" class="btn" id="submitButton" disabled>
