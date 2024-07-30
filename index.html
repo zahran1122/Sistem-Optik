@@ -94,12 +94,7 @@
         </div>
         <div class="content">
           <h3>Kenapa</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae quis
-            in placeat quam quaerat, autem vel at fuga magni laborum ipsa
-            consectetur necessitatibus quisquam veritatis voluptatem inventore
-            sed! Autem, molestias?
-          </p>
+          <p>Bagian 1 akan terbagi menjadi tiga kasus</p>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
             perferendis dolore provident non dolor assumenda officia.
@@ -162,18 +157,155 @@
       </div> -->
       <div class="pemantulan">
         <h2>Bagian 1: <span>Pemantulan</span> Cahaya</h2>
+        <h3 class="subjudul">Kasus 1</h3>
         <p>
-          Perhatikan gambar di bawah. Menurut kalian, apakah ini merupakan
-          gambar dua orang yang kembar identik atau gambar hasil pencerminan?
-          Cobalah untuk menjelaskan menggunakan pengetahuan yang kalian miliki
-          saat ini.
+          Pernahkah kalian berpikir tentang bagaimana manusia dapat mengetahui
+          bentuk wajah mereka? Gambar di bawah memperlihatkan seorang anak yang
+          sedang berdiri di depan cermin datar. Kita dapat melihat dengan jelas
+          bentuk wajah anak itu melalui pantulan cermin datar.
         </p>
         <div class="row">
           <div class="emodulepics">
-            <img src="img/fig3.png" alt="mirror" class="emodulepics-img" />
-            <h3 class="emodulepics-title">- Gambar 1 -</h3>
-            <!-- <p class="emodulepics-sifat">Maya, Tegak</p> -->
+            <div>
+              <img
+                src="img/observasi.jpeg"
+                alt="mirror"
+                class="emodulepics-img"
+              />
+              <h3 class="emodulepics-title">- Gambar 1 -</h3>
+              <!-- <p class="emodulepics-sifat">Maya, Tegak</p> -->
+            </div>
+            <div class="desc">
+              <p>
+                Cobalah untuk melakukan hal yang serupa! Amati cermin datar di
+                rumah atau di sekolah kemudian berdiri di hadapan cermin. Angkat
+                tangan kanan atau tangan kirimu dan jelaskan apa yang terlihat
+                pada cermin!
+              </p>
+              <div class="form">
+                <form name="FormJawaban" id="formJawaban">
+                  <div class="input-hip">
+                    <i data-feather="mail"></i>
+                    <input
+                      type="email"
+                      placeholder="Enter your email"
+                      name="email"
+                      id="email"
+                      required
+                    />
+                  </div>
+                  <div class="input-hip">
+                    <i data-feather="circle"></i>
+                    <input
+                      type="text"
+                      placeholder="Ketik jawaban di sini"
+                      name="h0"
+                      id="h0"
+                      required
+                    />
+                  </div>
+                  <!-- <div class="input-hip">
+                    <i data-feather="circle"></i>
+                    <input
+                      type="text"
+                      placeholder="Hipotesis Alternatif"
+                      name="h1"
+                      id="h1"
+                      required
+                    />
+                  </div> -->
+                  <button type="submit" class="btn" id="submitButton" disabled>
+                    Ajukan Jawaban
+                  </button>
+                </form>
+                <button id="loadingButton" class="btn" style="display: none">
+                  Memuat...
+                </button>
+                <div
+                  id="notification"
+                  class="notification"
+                  style="display: none"
+                >
+                  Jawaban anda telah <span>direkam</span>!
+                </div>
+                <div
+                  id="errorNotification"
+                  class="notification"
+                  style="display: none; color: white"
+                >
+                  Telah terjadi kesalahan, mohon
+                  <span>kirim ulang jawaban</span> !
+                </div>
+              </div>
+            </div>
           </div>
+          <div class="emodulepics1">
+            <div class="desc1">
+              <p>
+                Cobalah untuk melakukan hal yang serupa! Amati cermin datar di
+                rumah atau di sekolah kemudian berdiri di hadapan cermin. Angkat
+                tangan kanan atau tangan kirimu dan jelaskan apa yang terlihat
+                pada cermin!
+              </p>
+              <div class="form">
+                <form name="FormJawaban" id="formJawaban">
+                  <div class="input-hip">
+                    <i data-feather="mail"></i>
+                    <input
+                      type="email"
+                      placeholder="Enter your email"
+                      name="email"
+                      id="email"
+                      required
+                    />
+                  </div>
+                  <div class="input-hip">
+                    <i data-feather="circle"></i>
+                    <input
+                      type="text"
+                      placeholder="Ketik jawaban di sini"
+                      name="h0"
+                      id="h0"
+                      required
+                    />
+                  </div>
+                  <!-- <div class="input-hip">
+                    <i data-feather="circle"></i>
+                    <input
+                      type="text"
+                      placeholder="Hipotesis Alternatif"
+                      name="h1"
+                      id="h1"
+                      required
+                    />
+                  </div> -->
+                  <button type="submit" class="btn" id="submitButton" disabled>
+                    Ajukan Jawaban
+                  </button>
+                </form>
+                <button id="loadingButton" class="btn" style="display: none">
+                  Memuat...
+                </button>
+                <div
+                  id="notification"
+                  class="notification"
+                  style="display: none"
+                >
+                  Jawaban anda telah <span>direkam</span>!
+                </div>
+                <div
+                  id="errorNotification"
+                  class="notification"
+                  style="display: none; color: white"
+                >
+                  Telah terjadi kesalahan, mohon
+                  <span>kirim ulang jawaban</span> !
+                </div>
+              </div>
+            </div>
+            <video controls class="video1" src="img/contoh.mp4"></video>
+          </div>
+
           <!-- <div class="emodulepics">
             <img
               src="img/menu/2(Convex).jpg"
@@ -211,6 +343,10 @@
             <p class="emodulepics-sifat">Maya, Tegak</p>
           </div> -->
         </div>
+        <div class="emodulepic2">
+          <h3 class="subjudul2">Kasus 2</h3>
+          <p>Selanjutnya, perhatikan gambar di bawah. Terdapat seorang anak</p>
+        </div>
         <div class="form">
           <form name="FormJawaban" id="formJawaban">
             <div class="input-hip">
@@ -224,16 +360,16 @@
               />
             </div>
             <div class="input-hip">
-              <i data-feather="x-circle"></i>
+              <i data-feather="circle"></i>
               <input
                 type="text"
-                placeholder="Hipotesis Nol"
+                placeholder="Ketik jawaban di sini"
                 name="h0"
                 id="h0"
                 required
               />
             </div>
-            <div class="input-hip">
+            <!-- <div class="input-hip">
               <i data-feather="circle"></i>
               <input
                 type="text"
@@ -242,9 +378,9 @@
                 id="h1"
                 required
               />
-            </div>
+            </div> -->
             <button type="submit" class="btn" id="submitButton" disabled>
-              Ajukan Hipotesis
+              Ajukan Jawaban
             </button>
           </form>
           <button id="loadingButton" class="btn" style="display: none">
@@ -290,8 +426,27 @@
           class="javalab1"
         ></iframe>
       </div>
+      <div class="interactive2">
+        <button id="elabBtn2" onclick="toggleIframe2()">
+          Buka Lab Virtual Pemantulan Cahaya
+        </button>
+        <button id="closeBtn2" onclick="toggleIframe2()" style="display: none">
+          Tutup Lab Virtual
+        </button>
+        <iframe
+          id="javalabIframe2"
+          style="display: none; overflow-y: hidden"
+          sandbox="allow-scripts allow-same-origin allow-downloads"
+          allow="fullscreen"
+          src="https://www.radian.com.hk/simulations/optics%201.3b%20lateral%20inversion/lateral.html"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="javalab2"
+        ></iframe>
+      </div>
 
-      <div class="row">
+      <!-- <div class="row">
         <iframe
           src="https://www.radian.com.hk/simulations/optics%201.3b%20lateral%20inversion/lateral.html"
           allowfullscreen=""
@@ -299,7 +454,7 @@
           referrerpolicy="no-referrer-when-downgrade"
           class="javalab"
         ></iframe>
-      </div>
+      </div> -->
       <div class="row">
         <iframe
           src="https://www.geogebra.org/material/iframe/id/685665/width/1300/height/700/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto"
@@ -347,7 +502,7 @@
               id="h01"
             />
           </div>
-          <div class="input-hip">
+          <!-- <div class="input-hip">
             <i data-feather="circle"></i>
             <input
               type="text"
@@ -355,7 +510,7 @@
               name="h11"
               id="h11"
             />
-          </div>
+          </div> -->
           <button type="submit" class="btn" id="submitButton1" disabled>
             Ajukan Hipotesis
           </button>

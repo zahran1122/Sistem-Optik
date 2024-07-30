@@ -58,7 +58,7 @@ document.addEventListener("click", function (e) {
 document.addEventListener("DOMContentLoaded", function () {
   const emailInput = document.getElementById("email");
   const h0Input = document.getElementById("h0");
-  const h1Input = document.getElementById("h1");
+  // const h1Input = document.getElementById("h1");
   const submitButton = document.getElementById("submitButton");
   const loadingButton = document.getElementById("loadingButton");
   const notification = document.getElementById("notification");
@@ -68,11 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "https://script.google.com/macros/s/AKfycbzU9kijGGTyLaBcPDycNVuTAgXmdsXhCG0TvdoRztHb48vKf1lS7qdpT1rg5XKGtVoB/exec";
 
   function checkInputs() {
-    if (
-      emailInput.value.trim() !== "" &&
-      h0Input.value.trim() !== "" &&
-      h1Input.value.trim() !== ""
-    ) {
+    if (emailInput.value.trim() !== "" && h0Input.value.trim() !== "") {
       submitButton.disabled = false;
     } else {
       submitButton.disabled = true;
@@ -81,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   emailInput.addEventListener("input", checkInputs);
   h0Input.addEventListener("input", checkInputs);
-  h1Input.addEventListener("input", checkInputs);
+  // h1Input.addEventListener("input", checkInputs);
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -121,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   const h0Input = document.getElementById("h01");
-  const h1Input = document.getElementById("h11");
+  // const h1Input = document.getElementById("h11");
   const submitButton = document.getElementById("submitButton1");
   const loadingButton = document.getElementById("loadingButton1");
   const notification = document.getElementById("notification1");
@@ -131,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "https://script.google.com/macros/s/AKfycbw6RxAFdyAKWq5GhIyBnI3hsf4tg_M89Qt1fszMWDb452ry_uqjIAjPwgH_ahhuGeIp/exec";
 
   function checkInputs() {
-    if (h0Input.value.trim() !== "" && h1Input.value.trim() !== "") {
+    if (h0Input.value.trim() !== "") {
       submitButton.disabled = false;
     } else {
       submitButton.disabled = true;
@@ -139,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   h0Input.addEventListener("input", checkInputs);
-  h1Input.addEventListener("input", checkInputs);
+  // h1Input.addEventListener("input", checkInputs);
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -176,10 +172,27 @@ document.addEventListener("DOMContentLoaded", function () {
   checkInputs();
 });
 
+//Interactivity1
 function toggleIframe() {
   const iframe = document.getElementById("javalabIframe");
   const elabBtn = document.getElementById("elabBtn");
   const closeBtn = document.getElementById("closeBtn");
+
+  if (iframe.style.display === "none" || iframe.style.display === "") {
+    iframe.style.display = "block";
+    elabBtn.style.display = "none";
+    closeBtn.style.display = "inline-block";
+  } else {
+    iframe.style.display = "none";
+    elabBtn.style.display = "inline-block";
+    closeBtn.style.display = "none";
+  }
+}
+//Interactivity2
+function toggleIframe2() {
+  const iframe = document.getElementById("javalabIframe2");
+  const elabBtn = document.getElementById("elabBtn2");
+  const closeBtn = document.getElementById("closeBtn2");
 
   if (iframe.style.display === "none" || iframe.style.display === "") {
     iframe.style.display = "block";

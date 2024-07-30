@@ -402,6 +402,13 @@ tr:hover td {
   font-weight: 100;
 }
 
+.emodule .pemantulan .subjudul,
+.subjudul2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
 .emodule .row {
   /* display: flex;
   flex-wrap: wrap; */
@@ -409,15 +416,40 @@ tr:hover td {
   justify-content: center;
 }
 
-.emodule .row .emodulepics {
+.emodule .row .emodulepics,
+.emodulepics1 {
   text-align: center;
-  padding-bottom: 4rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.desc {
+  padding-left: 1px;
 }
 
+.desc1 {
+  padding-right: 1px;
+  margin-top: 25px;
+}
 .emodule .row .emodulepics img {
   border-style: groove;
   border-color: darkgrey;
-  width: 100%;
+  max-width: 320px;
+  float: left;
+  margin-right: 15px;
+}
+
+.emodulepics1 video {
+  border-style: groove;
+  border-color: darkgrey;
+  max-width: 600px;
+  float: right;
+  margin-left: 15px;
+}
+
+.video1 {
+  width: 70%;
 }
 
 .emodule .row .emodulepics .emodulepics-title {
@@ -486,6 +518,10 @@ tr:hover td {
   background-color: var(--primary);
 }
 
+.emodule .pemantulan .emodulepic2 {
+  margin-top: 0.5rem;
+}
+
 /* Simulasi Section */
 .emodule h2,
 .simulasi h2 {
@@ -510,12 +546,14 @@ tr:hover td {
   width: 100%;
   object-fit: cover;
 }
-.simulasi .interactive {
+.simulasi .interactive,
+.interactive2 {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.simulasi .interactive .javalab1 {
+.simulasi .javalab1,
+.javalab2 {
   width: 100%;
   height: 500px; /* Adjusted height */
   object-fit: cover; /* Ensures the content fills the container without stretching */
@@ -525,7 +563,18 @@ tr:hover td {
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
 }
-.simulasi .interactive #elabBtn {
+.simulasi .javalab2 {
+  width: 67%;
+  height: 600px; /* Adjusted height */
+  object-fit: cover; /* Ensures the content fills the container without stretching */
+  background-color: #222; /* Placeholder background color */
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+.simulasi #elabBtn,
+#elabBtn2 {
   margin-top: 1rem;
   display: inline-block;
   padding: 1rem 3rem;
@@ -536,7 +585,8 @@ tr:hover td {
   box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
   cursor: pointer;
 }
-.simulasi #elabBtn:hover {
+.simulasi #elabBtn,
+#elabBtn2:hover {
   background-color: var(--primary1);
   padding: 2%;
   /* width: 100%; */
@@ -549,7 +599,8 @@ tr:hover td {
   font-size: 1.4rem;
   color: var(--primary);
 }
-.simulasi .interactive #closeBtn {
+.simulasi #closeBtn,
+#closeBtn2 {
   margin-top: 1rem;
   display: inline-block;
   padding: 1rem 3rem;
@@ -560,7 +611,8 @@ tr:hover td {
   box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
   cursor: pointer;
 }
-.simulasi #closeBtn:hover {
+.simulasi #closeBtn,
+#closeBtn2:hover {
   background-color: var(--primary1);
   padding: 2%;
   /* width: 100%; */
