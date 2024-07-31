@@ -402,11 +402,17 @@ tr:hover td {
   font-weight: 100;
 }
 
+.emodule .pemantulan .general span {
+  font-style: italic;
+}
+
 .emodule .pemantulan .subjudul,
 .subjudul2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 0.5rem;
+  text-decoration-line: underline;
+  font-style: italic;
 }
 
 .emodule .row {
@@ -440,19 +446,46 @@ tr:hover td {
   margin-right: 15px;
 }
 
-.emodulepics1 video {
+.emodulepics1 .video {
   border-style: groove;
   border-color: darkgrey;
-  max-width: 600px;
+  width: 1366px;
+  float: left;
+  margin-right: 15px;
+}
+
+.video1 {
+  width: 100%;
+  height: 75%;
+}
+
+.emodule .row .emodulepics .emodulepics-title {
+  margin: 1rem auto 1.5rem;
+}
+
+.emodulepics2 {
+  text-align: center;
+  padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+.emodulepics2 img {
+  border-style: groove;
+  border-color: darkgrey;
+  max-width: 320px;
   float: right;
   margin-left: 15px;
 }
 
-.video1 {
-  width: 70%;
+.emodulepics2 .explain .explain2 span {
+  background-color: var(--primary);
 }
 
-.emodule .row .emodulepics .emodulepics-title {
+.explain .sidequest {
+  background-color: var(--primary1);
+  margin-bottom: 5px;
+}
+.emodulepics1 .emodulepics-title1 {
   margin: 1rem auto 1.5rem;
 }
 .emodule .form {
@@ -811,6 +844,14 @@ footer .credit a {
 
   .emodule .row form {
     padding-top: 0;
+  }
+
+  .emodulepics {
+    flex-wrap: wrap;
+  }
+
+  .emodulepics1 {
+    flex-wrap: wrap;
   }
 }
 /* Mobile Phone */
