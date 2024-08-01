@@ -467,7 +467,7 @@ tr:hover td {
 
 .emodulepics2 {
   text-align: center;
-  padding-bottom: 0.5rem;
+
   display: flex;
   justify-content: center;
 }
@@ -507,6 +507,18 @@ tr:hover td {
 
 .gelombang .wave {
   font-style: italic;
+}
+
+.wavefront {
+  display: block;
+  /* justify-content: center;
+  align-items: center; */
+  text-align: center;
+}
+
+.wavefront img {
+  border-radius: 10px;
+  max-width: 320px;
 }
 
 .emodule .form {
