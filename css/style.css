@@ -384,6 +384,8 @@ tr:hover td {
   /* display: flex;
   flex-wrap: wrap; */
   text-align: justify;
+  border: darkgrey;
+  border-radius: 5px;
 }
 
 .pemantulan h2 {
@@ -477,17 +479,36 @@ tr:hover td {
   margin-left: 15px;
 }
 
-.emodulepics2 .explain .explain2 span {
+.emodulepics2 .explain .explain1 .reflect {
   background-color: var(--primary);
 }
 
-.explain .sidequest {
+.explain1 .reflect1 {
   background-color: var(--primary1);
-  margin-bottom: 5px;
+}
+
+.gelombang .explain2 span {
+  background-color: var(--primary1);
+}
+
+.gelombang .sidequest {
+  background-color: var(--primary);
+
+  display: flex;
+  justify-content: center;
 }
 .emodulepics1 .emodulepics-title1 {
   margin: 1rem auto 1.5rem;
 }
+
+.emodule .row .gelombang .check {
+  background-color: var(--primary);
+}
+
+.gelombang .wave {
+  font-style: italic;
+}
+
 .emodule .form {
   flex: 1 1 30rem;
   padding: 1rem 2rem;
@@ -606,8 +627,18 @@ tr:hover td {
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
 }
-.simulasi #elabBtn,
-#elabBtn2 {
+.simulasi #elabBtn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: var(--primary);
+  background-color: var(--primary1);
+  border-radius: 40px;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  cursor: pointer;
+}
+.simulasi #elabBtn2 {
   margin-top: 1rem;
   display: inline-block;
   padding: 1rem 3rem;
@@ -617,6 +648,19 @@ tr:hover td {
   border-radius: 40px;
   box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
   cursor: pointer;
+}
+.simulasi #elabBtn:hover {
+  background-color: var(--primary);
+  padding: 2%;
+  /* width: 100%; */
+  /*  margin-left: 20px; */
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  border-radius: 40px;
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: var(--primary1);
 }
 .simulasi #elabBtn,
 #elabBtn2:hover {
@@ -643,6 +687,19 @@ tr:hover td {
   border-radius: 40px;
   box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
   cursor: pointer;
+}
+.simulasi #closeBtn:hover {
+  background-color: var(--primary);
+  padding: 2%;
+  /* width: 100%; */
+  /*  margin-left: 20px; */
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  border-radius: 40px;
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: var(--primary1);
 }
 .simulasi #closeBtn,
 #closeBtn2:hover {
@@ -852,6 +909,14 @@ footer .credit a {
 
   .emodulepics1 {
     flex-wrap: wrap;
+  }
+
+  .emodulepics2 {
+    flex-wrap: wrap;
+  }
+
+  .gelombang .sidequest {
+    text-align: center;
   }
 }
 /* Mobile Phone */
