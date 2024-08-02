@@ -497,6 +497,12 @@ tr:hover td {
   display: flex;
   justify-content: center;
 }
+
+.gelombang .istirahat {
+  background-color: var(--primary1);
+  text-align: center;
+}
+
 .emodulepics1 .emodulepics-title1 {
   margin: 1rem auto 1.5rem;
 }
@@ -507,6 +513,19 @@ tr:hover td {
 
 .gelombang .wave {
   font-style: italic;
+}
+
+.gelombang .water {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gelombang .water img {
+  max-width: 320px;
+  border-radius: 10px;
+  border-color: darkgrey;
+  border-style: groove;
 }
 
 .wavefront {
