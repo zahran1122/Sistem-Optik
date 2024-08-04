@@ -501,6 +501,7 @@ tr:hover td {
 .gelombang .istirahat {
   background-color: var(--primary1);
   text-align: center;
+  margin-top: 10px;
 }
 
 .emodulepics1 .emodulepics-title1 {
@@ -521,28 +522,50 @@ tr:hover td {
   align-items: center;
 }
 
-.gelombang .water img {
+.gelombang .water .water1 img,
+.water2 img {
   max-width: 320px;
   border-radius: 10px;
   border-color: darkgrey;
   border-style: groove;
+  margin-top: 5px;
+  margin-right: 5px;
 }
 
-.wavefront {
-  display: block;
-  /* justify-content: center;
-  align-items: center; */
+.gelombang .water1 h3,
+.water2 h3 {
   text-align: center;
 }
 
-.wavefront img {
-  border-radius: 10px;
+.wavefront {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wavefront .wavefront1 img,
+.wavefront2 img {
   max-width: 320px;
+  border-radius: 10px;
+  border-color: darkgrey;
+  border-style: groove;
+
+  margin-right: 5px;
+}
+
+.wavefront1 h3,
+.wavefront2 h3 {
+  text-align: center;
+}
+
+.cekund p {
+  margin-bottom: 0;
 }
 
 .emodule .form {
   flex: 1 1 30rem;
-  padding: 1rem 2rem;
+  padding-bottom: 1rem;
+  padding: 0rem 2rem;
   text-align: center;
 }
 .emodule .form .input-hip {
@@ -947,6 +970,16 @@ footer .credit a {
   }
 
   .gelombang .sidequest {
+    text-align: center;
+  }
+
+  .gelombang .water {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .wavefront {
+    flex-wrap: wrap;
     text-align: center;
   }
 }
