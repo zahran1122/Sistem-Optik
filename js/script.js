@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   const h0Input = document.getElementById("h01");
-  // const h1Input = document.getElementById("h11");
+  const h1Input = document.getElementById("h11");
   const submitButton = document.getElementById("submitButton1");
   const loadingButton = document.getElementById("loadingButton1");
   const notification = document.getElementById("notification1");
@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "https://script.google.com/macros/s/AKfycbw6RxAFdyAKWq5GhIyBnI3hsf4tg_M89Qt1fszMWDb452ry_uqjIAjPwgH_ahhuGeIp/exec";
 
   function checkInputs() {
-    if (h0Input.value.trim() !== "") {
+    if (h0Input.value.trim() !== "" && h1Input.value.trim() !== "") {
       submitButton.disabled = false;
     } else {
       submitButton.disabled = true;
@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   h0Input.addEventListener("input", checkInputs);
-  // h1Input.addEventListener("input", checkInputs);
+  h1Input.addEventListener("input", checkInputs);
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -204,3 +204,5 @@ function toggleIframe2() {
     closeBtn.style.display = "none";
   }
 }
+
+// MATH EQUATION

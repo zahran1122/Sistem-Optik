@@ -424,33 +424,62 @@ tr:hover td {
   justify-content: center;
 }
 
-.emodule .row .emodulepics,
-.emodulepics1 {
+.emodule .row .emodulepics1,
+.emodulepics3 {
   text-align: center;
   padding-bottom: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.desc {
-  padding-left: 1px;
+/* .desc {
+  padding: 20px;
+} */
+
+/* .desc p  {
+  margin-bottom: 20px;
+} */
+
+.desc .hipotesis {
+  text-align: center;
+  margin-top: 0;
+}
+
+.desc ol {
+  padding-left: 70px;
+  text-align: justify;
+  /* margin-bottom: 0rem; */
+  font-size: 1.65rem;
+  font-weight: 100;
+  line-height: 1.6;
+  margin-bottom: 10px;
 }
 
 .desc1 {
   padding-right: 1px;
-  margin-top: 25px;
+  margin-top: 5px;
 }
-.emodule .row .emodulepics img {
+/* .emodule .row .emodulepics img {
   border-style: groove;
   border-color: darkgrey;
   max-width: 320px;
   float: left;
   margin-right: 15px;
+  border-radius: 5px;
+} */
+
+.emodulepics3 img {
+  border-style: groove;
+  border-color: darkgrey;
+  max-width: 530px;
+  float: left;
+  margin-right: 15px;
+  border-radius: 5px;
 }
 
 .emodulepics1 .video {
-  border-style: groove;
-  border-color: darkgrey;
+  /* border-style: groove;
+  border-color: darkgrey; */
   width: 1366px;
   float: left;
   margin-right: 15px;
@@ -459,28 +488,24 @@ tr:hover td {
 .video1 {
   width: 100%;
   height: 75%;
-}
-
-.emodule .row .emodulepics .emodulepics-title {
-  margin: 1rem auto 1.5rem;
-}
-
-.emodulepics2 {
-  text-align: center;
-
-  display: flex;
-  justify-content: center;
-}
-.emodulepics2 img {
   border-style: groove;
   border-color: darkgrey;
-  max-width: 320px;
-  float: right;
-  margin-left: 15px;
 }
 
-.emodulepics2 .explain .explain1 .reflect {
+.explain1 .sinar {
   background-color: var(--primary);
+}
+
+/* .emodule .row .emodulepics .emodulepics-title {
+  margin: 1rem auto 1.5rem;
+} */
+
+.reflect {
+  background-color: var(--primary);
+}
+
+.attention {
+  background-color: var(--primary1);
 }
 
 .explain1 .reflect1 {
@@ -491,9 +516,13 @@ tr:hover td {
   background-color: var(--primary1);
 }
 
-.gelombang .sidequest {
+.explain3 span {
   background-color: var(--primary);
+}
 
+.sidequest {
+  background-color: var(--primary);
+  margin-top: 10px;
   display: flex;
   justify-content: center;
 }
@@ -503,10 +532,15 @@ tr:hover td {
   text-align: center;
   margin-top: 10px;
 }
-
-.emodulepics1 .emodulepics-title1 {
-  margin: 1rem auto 1.5rem;
+.eksperimen {
+  background-color: var(--primary1);
+  text-align: center;
+  margin-top: 10px;
 }
+
+/* .emodulepics1 .emodulepics-title1 {
+  margin: 1rem auto 1.5rem;
+} */
 
 .emodule .row .gelombang .check {
   background-color: var(--primary);
@@ -537,24 +571,46 @@ tr:hover td {
   text-align: center;
 }
 
-.wavefront {
+.wavefront,
+.formed,
+.explain {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .wavefront .wavefront1 img,
-.wavefront2 img {
+.wavefront2 img,
+.picture img,
+.emodulepics img {
   max-width: 320px;
   border-radius: 10px;
   border-color: darkgrey;
   border-style: groove;
+  margin-right: 5px;
+}
 
+.formed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formed .formed1 img,
+.formed2 img {
+  max-width: 530px;
+  border-radius: 10px;
+  border-color: darkgrey;
+  border-style: groove;
   margin-right: 5px;
 }
 
 .wavefront1 h3,
-.wavefront2 h3 {
+.wavefront2 h3,
+.formed1 h3,
+.formed2 h3,
+.emodulepics h3,
+.picture h3 {
   text-align: center;
 }
 
@@ -568,6 +624,7 @@ tr:hover td {
   padding: 0rem 2rem;
   text-align: center;
 }
+
 .emodule .form .input-hip {
   display: flex;
   align-items: center;
@@ -654,13 +711,13 @@ tr:hover td {
   width: 100%;
   object-fit: cover;
 }
-.simulasi .interactive,
+.interactive,
 .interactive2 {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.simulasi .javalab1,
+.javalab1,
 .javalab2 {
   width: 100%;
   height: 500px; /* Adjusted height */
@@ -671,7 +728,7 @@ tr:hover td {
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
 }
-.simulasi .javalab2 {
+.javalab2 {
   width: 67%;
   height: 600px; /* Adjusted height */
   object-fit: cover; /* Ensures the content fills the container without stretching */
@@ -681,8 +738,8 @@ tr:hover td {
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
 }
-.simulasi #elabBtn {
-  margin-top: 1rem;
+#elabBtn {
+  /* margin-top: 1rem; */
   display: inline-block;
   padding: 1rem 3rem;
   font-size: 1.4rem;
@@ -692,7 +749,7 @@ tr:hover td {
   box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
   cursor: pointer;
 }
-.simulasi #elabBtn2 {
+#elabBtn2 {
   margin-top: 1rem;
   display: inline-block;
   padding: 1rem 3rem;
@@ -703,20 +760,20 @@ tr:hover td {
   box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
   cursor: pointer;
 }
-.simulasi #elabBtn:hover {
+#elabBtn:hover {
   background-color: var(--primary);
   padding: 2%;
   /* width: 100%; */
   /*  margin-left: 20px; */
   box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
   border-radius: 40px;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   display: inline-block;
   padding: 1rem 3rem;
   font-size: 1.4rem;
   color: var(--primary1);
 }
-.simulasi #elabBtn,
+#elabBtn,
 #elabBtn2:hover {
   background-color: var(--primary1);
   padding: 2%;
@@ -724,13 +781,13 @@ tr:hover td {
   /*  margin-left: 20px; */
   box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
   border-radius: 40px;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   display: inline-block;
   padding: 1rem 3rem;
   font-size: 1.4rem;
   color: var(--primary);
 }
-.simulasi #closeBtn,
+#closeBtn,
 #closeBtn2 {
   margin-top: 1rem;
   display: inline-block;
@@ -742,7 +799,7 @@ tr:hover td {
   box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
   cursor: pointer;
 }
-.simulasi #closeBtn:hover {
+#closeBtn:hover {
   background-color: var(--primary);
   padding: 2%;
   /* width: 100%; */
@@ -755,7 +812,7 @@ tr:hover td {
   font-size: 1.4rem;
   color: var(--primary1);
 }
-.simulasi #closeBtn,
+#closeBtn,
 #closeBtn2:hover {
   background-color: var(--primary1);
   padding: 2%;
@@ -957,19 +1014,16 @@ footer .credit a {
     padding-top: 0;
   }
 
-  .emodulepics {
-    flex-wrap: wrap;
-  }
-
   .emodulepics1 {
     flex-wrap: wrap;
   }
 
   .emodulepics2 {
     flex-wrap: wrap;
+    text-align: center;
   }
 
-  .gelombang .sidequest {
+  .sidequest {
     text-align: center;
   }
 
@@ -980,6 +1034,34 @@ footer .credit a {
 
   .wavefront {
     flex-wrap: wrap;
+    text-align: center;
+  }
+  .emodulepics3 {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .formed {
+    margin-left: 15px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .explain {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .formed .formed1 img,
+  .formed2 img {
+    border-style: groove;
+    border-color: darkgrey;
+    max-width: 350px;
+    margin-right: 15px;
+  }
+
+  .video1 {
     text-align: center;
   }
 }
