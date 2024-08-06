@@ -172,6 +172,63 @@ document.addEventListener("DOMContentLoaded", function () {
   checkInputs();
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const h0Input = document.getElementById("h011");
+  const submitButton = document.getElementById("submitButton12");
+  const loadingButton = document.getElementById("loadingButton12");
+  const notification = document.getElementById("notification12");
+  const errorNotification = document.getElementById("errorNotification12");
+  const form = document.forms["FormJawaban12"];
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbw6RxAFdyAKWq5GhIyBnI3hsf4tg_M89Qt1fszMWDb452ry_uqjIAjPwgH_ahhuGeIp/exec";
+
+  console.log("Document Loaded");
+
+  function checkInputs() {
+    console.log("Checking inputs");
+    console.log("h0Input value:", h0Input.value);
+    if (h0Input.value.trim() !== "") {
+      submitButton.disabled = false;
+      console.log("Submit button enabled");
+    } else {
+      submitButton.disabled = true;
+      console.log("Submit button disabled");
+    }
+  }
+
+  h0Input.addEventListener("input", function () {
+    console.log("Input event triggered");
+    checkInputs();
+  });
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    console.log("Form submitted");
+
+    submitButton.style.display = "none";
+    loadingButton.style.display = "inline-block";
+    notification.style.display = "none";
+    errorNotification.style.display = "none";
+
+    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      .then((response) => {
+        console.log("Success!", response);
+        loadingButton.style.display = "none";
+        submitButton.style.display = "inline-block";
+        notification.style.display = "block";
+      })
+      .catch((error) => {
+        console.error("Error!", error.message);
+        loadingButton.style.display = "none";
+        submitButton.style.display = "inline-block";
+        errorNotification.style.display = "block";
+      });
+  });
+
+  // Initial check to set the button state on page load
+  checkInputs();
+});
+
 //Interactivity1
 function toggleIframe() {
   const iframe = document.getElementById("javalabIframe");
