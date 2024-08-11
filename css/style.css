@@ -417,7 +417,7 @@ tr:hover td {
 }
 
 .subjudul2 {
-  margin-top: 10px;
+  margin-top: 2rem;
   text-align: center;
   font-size: 2rem;
   margin-bottom: 0.5rem;
@@ -467,6 +467,10 @@ tr:hover td {
   padding-right: 1px;
   margin-top: 5px;
 }
+
+.cekung-exp {
+  margin-top: 0;
+}
 /* .emodule .row .emodulepics img {
   border-style: groove;
   border-color: darkgrey;
@@ -491,6 +495,11 @@ tr:hover td {
   width: 1366px;
   float: left;
   margin-right: 15px;
+}
+
+.cekung-2 .cerminbola img {
+  float: right;
+  margin-left: 15px;
 }
 
 .vids {
@@ -621,7 +630,7 @@ tr:hover td {
 
 .formed .formed1 img,
 .formed2 img {
-  max-width: 530px;
+  max-width: 475px;
   border-radius: 10px;
   border-color: darkgrey;
   border-style: groove;
@@ -634,12 +643,28 @@ tr:hover td {
 .formed2 h3,
 .emodulepics h3,
 .picture h3,
-.vids h3 {
+.vids h3,
+.cerminbola h3 {
   text-align: center;
 }
 
 .cekund p {
   margin-bottom: 0;
+}
+
+.cekung-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cekung-2 .cerminbola img {
+  max-width: 540px;
+  border-radius: 10px;
+  border-color: darkgrey;
+  border-style: groove;
+  margin-top: 5px;
+  margin-right: 5px;
 }
 
 .emodule .form {
@@ -707,7 +732,15 @@ tr:hover td {
   background-color: var(--primary);
 }
 
-.emodule .emodulepic2 {
+.emodule .cekung-2 {
+  text-align: center;
+  padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.emodule .conclusion {
   text-align: center;
   padding-bottom: 0.5rem;
   display: flex;
@@ -1051,6 +1084,10 @@ footer .credit a {
     flex-wrap: wrap;
   }
 
+  .cekung-2 {
+    flex-wrap: wrap;
+  }
+
   .emodulepics2 {
     flex-wrap: wrap;
     text-align: center;
@@ -1096,6 +1133,14 @@ footer .credit a {
 
   .video1 {
     text-align: center;
+  }
+
+  .vids {
+    text-align: center;
+  }
+
+  .cekung-2 .cerminbola img {
+    max-width: 450px;
   }
 }
 /* Mobile Phone */
