@@ -55,6 +55,7 @@ document.addEventListener("click", function (e) {
 //   checkInputs();
 // });
 
+// PRIORKNOWLEDGEWAVEFRONT
 document.addEventListener("DOMContentLoaded", function () {
   const emailInput = document.getElementById("email");
   const h0Input = document.getElementById("h0");
@@ -115,6 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
   checkInputs();
 });
 
+// CERMINDATARHIPOTESIS
 document.addEventListener("DOMContentLoaded", function () {
   const h0Input = document.getElementById("h01");
   const h1Input = document.getElementById("h11");
@@ -172,13 +174,130 @@ document.addEventListener("DOMContentLoaded", function () {
   checkInputs();
 });
 
+// VIDEO1-JAWABAN
 document.addEventListener("DOMContentLoaded", function () {
-  const h0Input = document.getElementById("h011");
+  const h0Input = document.getElementById("jawabanvideo");
   const submitButton = document.getElementById("submitButton12");
   const loadingButton = document.getElementById("loadingButton12");
   const notification = document.getElementById("notification12");
   const errorNotification = document.getElementById("errorNotification12");
   const form = document.forms["FormJawaban12"];
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbw6RxAFdyAKWq5GhIyBnI3hsf4tg_M89Qt1fszMWDb452ry_uqjIAjPwgH_ahhuGeIp/exec";
+
+  console.log("Document Loaded");
+
+  function checkInputs() {
+    console.log("Checking inputs");
+    console.log("h0Input value:", h0Input.value);
+    if (h0Input.value.trim() !== "") {
+      submitButton.disabled = false;
+      console.log("Submit button enabled");
+    } else {
+      submitButton.disabled = true;
+      console.log("Submit button disabled");
+    }
+  }
+
+  h0Input.addEventListener("input", function () {
+    console.log("Input event triggered");
+    checkInputs();
+  });
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    console.log("Form submitted");
+
+    submitButton.style.display = "none";
+    loadingButton.style.display = "inline-block";
+    notification.style.display = "none";
+    errorNotification.style.display = "none";
+
+    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      .then((response) => {
+        console.log("Success!", response);
+        loadingButton.style.display = "none";
+        submitButton.style.display = "inline-block";
+        notification.style.display = "block";
+      })
+      .catch((error) => {
+        console.error("Error!", error.message);
+        loadingButton.style.display = "none";
+        submitButton.style.display = "inline-block";
+        errorNotification.style.display = "block";
+      });
+  });
+
+  // Initial check to set the button state on page load
+  checkInputs();
+});
+
+// KESIMPULAN
+document.addEventListener("DOMContentLoaded", function () {
+  const h0Input = document.getElementById("kesimpulancermindatar");
+  const submitButton = document.getElementById("submitButton2");
+  const loadingButton = document.getElementById("loadingButton2");
+  const notification = document.getElementById("notification2");
+  const errorNotification = document.getElementById("errorNotification2");
+  const form = document.forms["FormJawaban2"];
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbw6RxAFdyAKWq5GhIyBnI3hsf4tg_M89Qt1fszMWDb452ry_uqjIAjPwgH_ahhuGeIp/exec";
+
+  console.log("Document Loaded");
+
+  function checkInputs() {
+    console.log("Checking inputs");
+    console.log("h0Input value:", h0Input.value);
+    if (h0Input.value.trim() !== "") {
+      submitButton.disabled = false;
+      console.log("Submit button enabled");
+    } else {
+      submitButton.disabled = true;
+      console.log("Submit button disabled");
+    }
+  }
+
+  h0Input.addEventListener("input", function () {
+    console.log("Input event triggered");
+    checkInputs();
+  });
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    console.log("Form submitted");
+
+    submitButton.style.display = "none";
+    loadingButton.style.display = "inline-block";
+    notification.style.display = "none";
+    errorNotification.style.display = "none";
+
+    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      .then((response) => {
+        console.log("Success!", response);
+        loadingButton.style.display = "none";
+        submitButton.style.display = "inline-block";
+        notification.style.display = "block";
+      })
+      .catch((error) => {
+        console.error("Error!", error.message);
+        loadingButton.style.display = "none";
+        submitButton.style.display = "inline-block";
+        errorNotification.style.display = "block";
+      });
+  });
+
+  // Initial check to set the button state on page load
+  checkInputs();
+});
+
+// CERMINRIAS-TELESKOP
+document.addEventListener("DOMContentLoaded", function () {
+  const h0Input = document.getElementById("riasteleskop");
+  const submitButton = document.getElementById("submitButton3");
+  const loadingButton = document.getElementById("loadingButton3");
+  const notification = document.getElementById("notification3");
+  const errorNotification = document.getElementById("errorNotification3");
+  const form = document.forms["FormJawaban3"];
   const scriptURL =
     "https://script.google.com/macros/s/AKfycbw6RxAFdyAKWq5GhIyBnI3hsf4tg_M89Qt1fszMWDb452ry_uqjIAjPwgH_ahhuGeIp/exec";
 
