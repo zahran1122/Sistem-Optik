@@ -453,6 +453,11 @@ tr:hover td {
   margin-top: 0;
 }
 
+.masalah1 .hipotesis1 {
+  text-align: center;
+  margin-top: 10px;
+}
+
 .desc ol {
   padding-left: 70px;
   text-align: justify;
@@ -489,10 +494,10 @@ tr:hover td {
   border-radius: 5px;
 }
 
-.emodulepics1 .video {
+.video video {
   /* border-style: groove;
   border-color: darkgrey; */
-  width: 1366px;
+  /* width: 1366px; */
   float: left;
   margin-right: 15px;
 }
@@ -502,23 +507,24 @@ tr:hover td {
   margin-right: 15px;
 }
 
-.vids {
-  width: 1366px;
+.vids video {
   float: left;
   margin-right: 15px;
 }
 
 .video2 {
-  width: 100%;
-  height: 75%;
+  max-width: 450px;
+  /* width: 100%;
+  height: 75%; */
   border-style: groove;
   border-color: darkgrey;
   border-radius: 5px;
 }
 
 .video1 {
-  width: 100%;
-  height: 75%;
+  max-width: 450px;
+  /* width: 100%;
+  height: 75%; */
   border-style: groove;
   border-color: darkgrey;
   border-radius: 5px;
@@ -1113,8 +1119,10 @@ footer .credit a {
     padding-top: 0;
   }
 
-  .emodulepics1 {
+  .emodulepics1,
+  .conclusion {
     flex-wrap: wrap;
+    text-align: center;
   }
 
   .cekung-2 {
@@ -1187,12 +1195,13 @@ footer .credit a {
     margin: 0;
   }
 
-  .video1 {
-    text-align: center;
+  .vids video {
+    max-width: 340px;
+    margin-right: 0;
   }
-
-  .vids {
-    text-align: center;
+  .video video {
+    max-width: 340px;
+    margin-right: 0;
   }
 
   .cekung-2 .cerminbola img {

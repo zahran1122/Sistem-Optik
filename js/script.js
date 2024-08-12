@@ -173,6 +173,63 @@ document.addEventListener("DOMContentLoaded", function () {
   // Initial check
   checkInputs();
 });
+// CERMINCEKUNGHIPOTESIS
+document.addEventListener("DOMContentLoaded", function () {
+  const h0Input = document.getElementById("h02");
+  const h1Input = document.getElementById("h12");
+  const submitButton = document.getElementById("submitButton4");
+  const loadingButton = document.getElementById("loadingButton4");
+  const notification = document.getElementById("notification4");
+  const errorNotification = document.getElementById("errorNotification4");
+  const form = document.forms["FormJawaban4"];
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbw6RxAFdyAKWq5GhIyBnI3hsf4tg_M89Qt1fszMWDb452ry_uqjIAjPwgH_ahhuGeIp/exec";
+
+  function checkInputs() {
+    if (h0Input.value.trim() !== "" && h1Input.value.trim() !== "") {
+      submitButton.disabled = false;
+    } else {
+      submitButton.disabled = true;
+    }
+  }
+
+  h0Input.addEventListener("input", checkInputs);
+  h1Input.addEventListener("input", checkInputs);
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    // Hide the submit button and show the loading button
+    submitButton.style.display = "none";
+    loadingButton.style.display = "inline-block";
+    notification.style.display = "none";
+    errorNotification.style.display = "none";
+
+    // Perform the form submission
+    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      .then((response) => {
+        console.log("Success!", response);
+        // Hide the loading button and show the submit button
+        loadingButton.style.display = "none";
+        submitButton.style.display = "inline-block";
+
+        // Show the success notification
+        notification.style.display = "block";
+      })
+      .catch((error) => {
+        console.error("Error!", error.message);
+        // Hide the loading button and show the submit button
+        loadingButton.style.display = "none";
+        submitButton.style.display = "inline-block";
+
+        // Show the error notification
+        errorNotification.style.display = "block";
+      });
+  });
+
+  // Initial check
+  checkInputs();
+});
 
 // VIDEO1-JAWABAN
 document.addEventListener("DOMContentLoaded", function () {
