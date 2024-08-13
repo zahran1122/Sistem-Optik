@@ -387,11 +387,31 @@ tr:hover td {
   border: darkgrey;
   border-radius: 5px;
 }
+.emodule .pembiasan {
+  margin-top: 1em;
+  /* text-align: center; */
+  /* margin-bottom: 1em; */
+  /* display: flex;
+  flex-wrap: wrap; */
+  text-align: justify;
+  border: darkgrey;
+  border-radius: 5px;
+}
 
 .pemantulan h2 {
   font-size: 2.5em;
   justify-content: center;
   background-color: var(--primary);
+}
+
+.pembiasan h2 {
+  font-size: 2.5em;
+  justify-content: center;
+  background-color: var(--primary1);
+}
+
+.pembiasan h2 span {
+  color: var(--primary);
 }
 
 .pemantulan h2 span {
@@ -681,6 +701,13 @@ tr:hover td {
   margin-right: 5px;
   margin-top: 5px;
 }
+.formed-c .formed113 img {
+  max-width: 720px;
+  border-radius: 10px;
+  border-color: darkgrey;
+  border-style: groove;
+  margin-top: 5px;
+}
 .formed-c .formed12 img {
   max-width: 400px;
   height: 398px;
@@ -702,7 +729,8 @@ tr:hover td {
 .bayangan2 h3,
 .formed11 h3,
 .formed12 h3,
-.cermincekung h3 {
+.cermincekung h3,
+.formed113 h3 {
   text-align: center;
 }
 
@@ -842,13 +870,13 @@ tr:hover td {
   object-fit: cover;
 }
 .interactive,
-.interactive2 {
+.interactive2,
+.interactive3 {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.javalab1,
-.javalab2 {
+.javalab1 {
   width: 100%;
   height: 500px; /* Adjusted height */
   object-fit: cover; /* Ensures the content fills the container without stretching */
@@ -859,6 +887,16 @@ tr:hover td {
   align-items: center; /* Center content vertically */
 }
 .javalab2 {
+  width: 100%;
+  height: 500px; /* Adjusted height */
+  object-fit: cover; /* Ensures the content fills the container without stretching */
+  background-color: #222; /* Placeholder background color */
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+.javalab3 {
   width: 100%;
   height: 500px; /* Adjusted height */
   object-fit: cover; /* Ensures the content fills the container without stretching */
@@ -869,6 +907,17 @@ tr:hover td {
   align-items: center; /* Center content vertically */
 }
 #elabBtn {
+  /* margin-top: 1rem; */
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: var(--primary);
+  background-color: var(--primary1);
+  border-radius: 40px;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  cursor: pointer;
+}
+#elabBtn3 {
   /* margin-top: 1rem; */
   display: inline-block;
   padding: 1rem 3rem;
@@ -903,6 +952,19 @@ tr:hover td {
   font-size: 1.4rem;
   color: var(--primary1);
 }
+#elabBtn3:hover {
+  background-color: var(--primary);
+  padding: 2%;
+  /* width: 100%; */
+  /*  margin-left: 20px; */
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  border-radius: 40px;
+  /* margin-top: 1rem; */
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: var(--primary1);
+}
 #elabBtn,
 #elabBtn2:hover {
   background-color: var(--primary1);
@@ -918,7 +980,8 @@ tr:hover td {
   color: var(--primary);
 }
 #closeBtn,
-#closeBtn2 {
+#closeBtn2,
+#closeBtn3 {
   margin-top: 1rem;
   display: inline-block;
   padding: 1rem 3rem;
@@ -930,6 +993,19 @@ tr:hover td {
   cursor: pointer;
 }
 #closeBtn:hover {
+  background-color: var(--primary);
+  padding: 2%;
+  /* width: 100%; */
+  /*  margin-left: 20px; */
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  border-radius: 40px;
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: var(--primary1);
+}
+#closeBtn3:hover {
   background-color: var(--primary);
   padding: 2%;
   /* width: 100%; */

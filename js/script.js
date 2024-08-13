@@ -55,7 +55,7 @@ document.addEventListener("click", function (e) {
 //   checkInputs();
 // });
 
-// PRIORKNOWLEDGEWAVEFRONT
+// WAVEFRONT-PRIORKNOWLEDGE
 document.addEventListener("DOMContentLoaded", function () {
   const emailInput = document.getElementById("email");
   const h0Input = document.getElementById("h0");
@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
   checkInputs();
 });
 
-// CERMINDATARHIPOTESIS
+// HIPOTESIS-CERMINDATAR
 document.addEventListener("DOMContentLoaded", function () {
   const h0Input = document.getElementById("h01");
   const h1Input = document.getElementById("h11");
@@ -173,65 +173,8 @@ document.addEventListener("DOMContentLoaded", function () {
   // Initial check
   checkInputs();
 });
-// CERMINCEKUNGHIPOTESIS
-document.addEventListener("DOMContentLoaded", function () {
-  const h0Input = document.getElementById("h02");
-  const h1Input = document.getElementById("h12");
-  const submitButton = document.getElementById("submitButton4");
-  const loadingButton = document.getElementById("loadingButton4");
-  const notification = document.getElementById("notification4");
-  const errorNotification = document.getElementById("errorNotification4");
-  const form = document.forms["FormJawaban4"];
-  const scriptURL =
-    "https://script.google.com/macros/s/AKfycbw6RxAFdyAKWq5GhIyBnI3hsf4tg_M89Qt1fszMWDb452ry_uqjIAjPwgH_ahhuGeIp/exec";
 
-  function checkInputs() {
-    if (h0Input.value.trim() !== "" && h1Input.value.trim() !== "") {
-      submitButton.disabled = false;
-    } else {
-      submitButton.disabled = true;
-    }
-  }
-
-  h0Input.addEventListener("input", checkInputs);
-  h1Input.addEventListener("input", checkInputs);
-
-  form.addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    // Hide the submit button and show the loading button
-    submitButton.style.display = "none";
-    loadingButton.style.display = "inline-block";
-    notification.style.display = "none";
-    errorNotification.style.display = "none";
-
-    // Perform the form submission
-    fetch(scriptURL, { method: "POST", body: new FormData(form) })
-      .then((response) => {
-        console.log("Success!", response);
-        // Hide the loading button and show the submit button
-        loadingButton.style.display = "none";
-        submitButton.style.display = "inline-block";
-
-        // Show the success notification
-        notification.style.display = "block";
-      })
-      .catch((error) => {
-        console.error("Error!", error.message);
-        // Hide the loading button and show the submit button
-        loadingButton.style.display = "none";
-        submitButton.style.display = "inline-block";
-
-        // Show the error notification
-        errorNotification.style.display = "block";
-      });
-  });
-
-  // Initial check
-  checkInputs();
-});
-
-// VIDEO1-JAWABAN
+// VIDEO1-JAWABAN-CERMINDATAR
 document.addEventListener("DOMContentLoaded", function () {
   const h0Input = document.getElementById("jawabanvideo");
   const submitButton = document.getElementById("submitButton12");
@@ -289,9 +232,9 @@ document.addEventListener("DOMContentLoaded", function () {
   checkInputs();
 });
 
-// KESIMPULAN
+// KESIMPULAN-CERMINDATAR
 document.addEventListener("DOMContentLoaded", function () {
-  const h0Input = document.getElementById("kesimpulancermindatar");
+  const h0Input = document.getElementById("kesimpulandatar");
   const submitButton = document.getElementById("submitButton2");
   const loadingButton = document.getElementById("loadingButton2");
   const notification = document.getElementById("notification2");
@@ -347,7 +290,7 @@ document.addEventListener("DOMContentLoaded", function () {
   checkInputs();
 });
 
-// CERMINRIAS-TELESKOP
+// CERMINRIAS-TELESKOP-CERMINCEKUNG
 document.addEventListener("DOMContentLoaded", function () {
   const h0Input = document.getElementById("riasteleskop");
   const submitButton = document.getElementById("submitButton3");
@@ -355,6 +298,412 @@ document.addEventListener("DOMContentLoaded", function () {
   const notification = document.getElementById("notification3");
   const errorNotification = document.getElementById("errorNotification3");
   const form = document.forms["FormJawaban3"];
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbw6RxAFdyAKWq5GhIyBnI3hsf4tg_M89Qt1fszMWDb452ry_uqjIAjPwgH_ahhuGeIp/exec";
+
+  console.log("Document Loaded");
+
+  function checkInputs() {
+    console.log("Checking inputs");
+    console.log("h0Input value:", h0Input.value);
+    if (h0Input.value.trim() !== "") {
+      submitButton.disabled = false;
+      console.log("Submit button enabled");
+    } else {
+      submitButton.disabled = true;
+      console.log("Submit button disabled");
+    }
+  }
+
+  h0Input.addEventListener("input", function () {
+    console.log("Input event triggered");
+    checkInputs();
+  });
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    console.log("Form submitted");
+
+    submitButton.style.display = "none";
+    loadingButton.style.display = "inline-block";
+    notification.style.display = "none";
+    errorNotification.style.display = "none";
+
+    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      .then((response) => {
+        console.log("Success!", response);
+        loadingButton.style.display = "none";
+        submitButton.style.display = "inline-block";
+        notification.style.display = "block";
+      })
+      .catch((error) => {
+        console.error("Error!", error.message);
+        loadingButton.style.display = "none";
+        submitButton.style.display = "inline-block";
+        errorNotification.style.display = "block";
+      });
+  });
+
+  // Initial check to set the button state on page load
+  checkInputs();
+});
+
+// HIPOTESIS-CERMINCEKUNG
+document.addEventListener("DOMContentLoaded", function () {
+  const h0Input = document.getElementById("h02");
+  const h1Input = document.getElementById("h12");
+  const submitButton = document.getElementById("submitButton4");
+  const loadingButton = document.getElementById("loadingButton4");
+  const notification = document.getElementById("notification4");
+  const errorNotification = document.getElementById("errorNotification4");
+  const form = document.forms["FormJawaban4"];
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbw6RxAFdyAKWq5GhIyBnI3hsf4tg_M89Qt1fszMWDb452ry_uqjIAjPwgH_ahhuGeIp/exec";
+
+  function checkInputs() {
+    if (h0Input.value.trim() !== "" && h1Input.value.trim() !== "") {
+      submitButton.disabled = false;
+    } else {
+      submitButton.disabled = true;
+    }
+  }
+
+  h0Input.addEventListener("input", checkInputs);
+  h1Input.addEventListener("input", checkInputs);
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    // Hide the submit button and show the loading button
+    submitButton.style.display = "none";
+    loadingButton.style.display = "inline-block";
+    notification.style.display = "none";
+    errorNotification.style.display = "none";
+
+    // Perform the form submission
+    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      .then((response) => {
+        console.log("Success!", response);
+        // Hide the loading button and show the submit button
+        loadingButton.style.display = "none";
+        submitButton.style.display = "inline-block";
+
+        // Show the success notification
+        notification.style.display = "block";
+      })
+      .catch((error) => {
+        console.error("Error!", error.message);
+        // Hide the loading button and show the submit button
+        loadingButton.style.display = "none";
+        submitButton.style.display = "inline-block";
+
+        // Show the error notification
+        errorNotification.style.display = "block";
+      });
+  });
+
+  // Initial check
+  checkInputs();
+});
+
+// KESIMPULAN-CERMINCEKUNG
+document.addEventListener("DOMContentLoaded", function () {
+  const h0Input = document.getElementById("kesimpulancekung");
+  const submitButton = document.getElementById("submitButton5");
+  const loadingButton = document.getElementById("loadingButton5");
+  const notification = document.getElementById("notification5");
+  const errorNotification = document.getElementById("errorNotification5");
+  const form = document.forms["FormJawaban5"];
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbw6RxAFdyAKWq5GhIyBnI3hsf4tg_M89Qt1fszMWDb452ry_uqjIAjPwgH_ahhuGeIp/exec";
+
+  console.log("Document Loaded");
+
+  function checkInputs() {
+    console.log("Checking inputs");
+    console.log("h0Input value:", h0Input.value);
+    if (h0Input.value.trim() !== "") {
+      submitButton.disabled = false;
+      console.log("Submit button enabled");
+    } else {
+      submitButton.disabled = true;
+      console.log("Submit button disabled");
+    }
+  }
+
+  h0Input.addEventListener("input", function () {
+    console.log("Input event triggered");
+    checkInputs();
+  });
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    console.log("Form submitted");
+
+    submitButton.style.display = "none";
+    loadingButton.style.display = "inline-block";
+    notification.style.display = "none";
+    errorNotification.style.display = "none";
+
+    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      .then((response) => {
+        console.log("Success!", response);
+        loadingButton.style.display = "none";
+        submitButton.style.display = "inline-block";
+        notification.style.display = "block";
+      })
+      .catch((error) => {
+        console.error("Error!", error.message);
+        loadingButton.style.display = "none";
+        submitButton.style.display = "inline-block";
+        errorNotification.style.display = "block";
+      });
+  });
+
+  // Initial check to set the button state on page load
+  checkInputs();
+});
+
+// VIDEO2-JAWABAN-CERMINCEKUNG
+document.addEventListener("DOMContentLoaded", function () {
+  const h0Input = document.getElementById("jawabanvideo-cek");
+  const submitButton = document.getElementById("submitButton6");
+  const loadingButton = document.getElementById("loadingButton6");
+  const notification = document.getElementById("notification6");
+  const errorNotification = document.getElementById("errorNotification6");
+  const form = document.forms["FormJawaban6"];
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbw6RxAFdyAKWq5GhIyBnI3hsf4tg_M89Qt1fszMWDb452ry_uqjIAjPwgH_ahhuGeIp/exec";
+
+  console.log("Document Loaded");
+
+  function checkInputs() {
+    console.log("Checking inputs");
+    console.log("h0Input value:", h0Input.value);
+    if (h0Input.value.trim() !== "") {
+      submitButton.disabled = false;
+      console.log("Submit button enabled");
+    } else {
+      submitButton.disabled = true;
+      console.log("Submit button disabled");
+    }
+  }
+
+  h0Input.addEventListener("input", function () {
+    console.log("Input event triggered");
+    checkInputs();
+  });
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    console.log("Form submitted");
+
+    submitButton.style.display = "none";
+    loadingButton.style.display = "inline-block";
+    notification.style.display = "none";
+    errorNotification.style.display = "none";
+
+    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      .then((response) => {
+        console.log("Success!", response);
+        loadingButton.style.display = "none";
+        submitButton.style.display = "inline-block";
+        notification.style.display = "block";
+      })
+      .catch((error) => {
+        console.error("Error!", error.message);
+        loadingButton.style.display = "none";
+        submitButton.style.display = "inline-block";
+        errorNotification.style.display = "block";
+      });
+  });
+
+  // Initial check to set the button state on page load
+  checkInputs();
+});
+
+// VIDEO2-JAWABAN-CERMINCEMBUNG
+document.addEventListener("DOMContentLoaded", function () {
+  const h0Input = document.getElementById("jawabanvideo-cem");
+  const submitButton = document.getElementById("submitButton");
+  const loadingButton = document.getElementById("loadingButton7");
+  const notification = document.getElementById("notification7");
+  const errorNotification = document.getElementById("errorNotification7");
+  const form = document.forms["FormJawaban7"];
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbw6RxAFdyAKWq5GhIyBnI3hsf4tg_M89Qt1fszMWDb452ry_uqjIAjPwgH_ahhuGeIp/exec";
+
+  console.log("Document Loaded");
+
+  function checkInputs() {
+    console.log("Checking inputs");
+    console.log("h0Input value:", h0Input.value);
+    if (h0Input.value.trim() !== "") {
+      submitButton.disabled = false;
+      console.log("Submit button enabled");
+    } else {
+      submitButton.disabled = true;
+      console.log("Submit button disabled");
+    }
+  }
+
+  h0Input.addEventListener("input", function () {
+    console.log("Input event triggered");
+    checkInputs();
+  });
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    console.log("Form submitted");
+
+    submitButton.style.display = "none";
+    loadingButton.style.display = "inline-block";
+    notification.style.display = "none";
+    errorNotification.style.display = "none";
+
+    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      .then((response) => {
+        console.log("Success!", response);
+        loadingButton.style.display = "none";
+        submitButton.style.display = "inline-block";
+        notification.style.display = "block";
+      })
+      .catch((error) => {
+        console.error("Error!", error.message);
+        loadingButton.style.display = "none";
+        submitButton.style.display = "inline-block";
+        errorNotification.style.display = "block";
+      });
+  });
+
+  // Initial check to set the button state on page load
+  checkInputs();
+});
+
+// MAYA-CERMINCEKUNG
+document.addEventListener("DOMContentLoaded", function () {
+  const h0Input = document.getElementById("maya-cembung");
+  const submitButton = document.getElementById("submitButton8");
+  const loadingButton = document.getElementById("loadingButton8");
+  const notification = document.getElementById("notification8");
+  const errorNotification = document.getElementById("errorNotification8");
+  const form = document.forms["FormJawaban8"];
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbw6RxAFdyAKWq5GhIyBnI3hsf4tg_M89Qt1fszMWDb452ry_uqjIAjPwgH_ahhuGeIp/exec";
+
+  console.log("Document Loaded");
+
+  function checkInputs() {
+    console.log("Checking inputs");
+    console.log("h0Input value:", h0Input.value);
+    if (h0Input.value.trim() !== "") {
+      submitButton.disabled = false;
+      console.log("Submit button enabled");
+    } else {
+      submitButton.disabled = true;
+      console.log("Submit button disabled");
+    }
+  }
+
+  h0Input.addEventListener("input", function () {
+    console.log("Input event triggered");
+    checkInputs();
+  });
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    console.log("Form submitted");
+
+    submitButton.style.display = "none";
+    loadingButton.style.display = "inline-block";
+    notification.style.display = "none";
+    errorNotification.style.display = "none";
+
+    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      .then((response) => {
+        console.log("Success!", response);
+        loadingButton.style.display = "none";
+        submitButton.style.display = "inline-block";
+        notification.style.display = "block";
+      })
+      .catch((error) => {
+        console.error("Error!", error.message);
+        loadingButton.style.display = "none";
+        submitButton.style.display = "inline-block";
+        errorNotification.style.display = "block";
+      });
+  });
+
+  // Initial check to set the button state on page load
+  checkInputs();
+});
+
+// HIPOTESIS-CERMINCEKUNG
+document.addEventListener("DOMContentLoaded", function () {
+  const h0Input = document.getElementById("h03");
+  const h1Input = document.getElementById("h13");
+  const submitButton = document.getElementById("submitButton9");
+  const loadingButton = document.getElementById("loadingButton9");
+  const notification = document.getElementById("notification9");
+  const errorNotification = document.getElementById("errorNotification9");
+  const form = document.forms["FormJawaban9"];
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbw6RxAFdyAKWq5GhIyBnI3hsf4tg_M89Qt1fszMWDb452ry_uqjIAjPwgH_ahhuGeIp/exec";
+
+  function checkInputs() {
+    if (h0Input.value.trim() !== "" && h1Input.value.trim() !== "") {
+      submitButton.disabled = false;
+    } else {
+      submitButton.disabled = true;
+    }
+  }
+
+  h0Input.addEventListener("input", checkInputs);
+  h1Input.addEventListener("input", checkInputs);
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    // Hide the submit button and show the loading button
+    submitButton.style.display = "none";
+    loadingButton.style.display = "inline-block";
+    notification.style.display = "none";
+    errorNotification.style.display = "none";
+
+    // Perform the form submission
+    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      .then((response) => {
+        console.log("Success!", response);
+        // Hide the loading button and show the submit button
+        loadingButton.style.display = "none";
+        submitButton.style.display = "inline-block";
+
+        // Show the success notification
+        notification.style.display = "block";
+      })
+      .catch((error) => {
+        console.error("Error!", error.message);
+        // Hide the loading button and show the submit button
+        loadingButton.style.display = "none";
+        submitButton.style.display = "inline-block";
+
+        // Show the error notification
+        errorNotification.style.display = "block";
+      });
+  });
+
+  // Initial check
+  checkInputs();
+});
+
+// KESIMPULAN-CERMINCEMBUNG
+document.addEventListener("DOMContentLoaded", function () {
+  const h0Input = document.getElementById("kesimpulancembung");
+  const submitButton = document.getElementById("submitButton10");
+  const loadingButton = document.getElementById("loadingButton10");
+  const notification = document.getElementById("notification10");
+  const errorNotification = document.getElementById("errorNotification10");
+  const form = document.forms["FormJawaban10"];
   const scriptURL =
     "https://script.google.com/macros/s/AKfycbw6RxAFdyAKWq5GhIyBnI3hsf4tg_M89Qt1fszMWDb452ry_uqjIAjPwgH_ahhuGeIp/exec";
 
@@ -426,6 +775,23 @@ function toggleIframe2() {
   const iframe = document.getElementById("javalabIframe2");
   const elabBtn = document.getElementById("elabBtn2");
   const closeBtn = document.getElementById("closeBtn2");
+
+  if (iframe.style.display === "none" || iframe.style.display === "") {
+    iframe.style.display = "block";
+    elabBtn.style.display = "none";
+    closeBtn.style.display = "inline-block";
+  } else {
+    iframe.style.display = "none";
+    elabBtn.style.display = "inline-block";
+    closeBtn.style.display = "none";
+  }
+}
+
+//Interactivity3
+function toggleIframe3() {
+  const iframe = document.getElementById("javalabIframe3");
+  const elabBtn = document.getElementById("elabBtn3");
+  const closeBtn = document.getElementById("closeBtn3");
 
   if (iframe.style.display === "none" || iframe.style.display === "") {
     iframe.style.display = "block";
