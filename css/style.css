@@ -417,7 +417,7 @@ tr:hover td {
 }
 
 .subjudul2 {
-  margin-top: 2rem;
+  margin-top: 1rem;
   text-align: center;
   font-size: 2rem;
   margin-bottom: 0.5rem;
@@ -507,6 +507,12 @@ tr:hover td {
   margin-right: 15px;
 }
 
+.ccekung .cermincekung img {
+  float: right;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
 .vids video {
   float: left;
   margin-right: 15px;
@@ -554,6 +560,12 @@ tr:hover td {
   background-color: var(--primary1);
 }
 
+.endDat {
+  margin-top: 5px;
+  background-color: var(--primary1);
+  text-align: center;
+}
+
 .explain3 span {
   background-color: var(--primary);
 }
@@ -574,6 +586,7 @@ tr:hover td {
   background-color: var(--primary);
   text-align: center;
   margin-top: 10px;
+  font-size: 1.5em;
 }
 .eksperimen,
 .eksperimen1 {
@@ -686,7 +699,10 @@ tr:hover td {
 .vids h3,
 .cerminbola h3,
 .bayangan1 h3,
-.bayangan2 h3 {
+.bayangan2 h3,
+.formed11 h3,
+.formed12 h3,
+.cermincekung h3 {
   text-align: center;
 }
 
@@ -698,6 +714,19 @@ tr:hover td {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.ccekung {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ccekung .cermincekung img {
+  max-width: 420px;
+  border-radius: 10px;
+  border-color: darkgrey;
+  border-style: groove;
 }
 
 .cekung-2 .cerminbola img {
@@ -830,8 +859,8 @@ tr:hover td {
   align-items: center; /* Center content vertically */
 }
 .javalab2 {
-  width: 67%;
-  height: 600px; /* Adjusted height */
+  width: 100%;
+  height: 500px; /* Adjusted height */
   object-fit: cover; /* Ensures the content fills the container without stretching */
   background-color: #222; /* Placeholder background color */
   margin-top: 2rem;
@@ -1129,6 +1158,10 @@ footer .credit a {
     flex-wrap: wrap;
   }
 
+  .ccekung {
+    flex-wrap: wrap;
+  }
+
   .emodulepics2 {
     flex-wrap: wrap;
     text-align: center;
@@ -1205,6 +1238,11 @@ footer .credit a {
   }
 
   .cekung-2 .cerminbola img {
+    max-width: 340px;
+    margin-right: 0;
+  }
+
+  .ccekung .cermincekung img {
     max-width: 340px;
     margin-right: 0;
   }
