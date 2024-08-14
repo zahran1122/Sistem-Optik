@@ -488,6 +488,16 @@ tr:hover td {
   margin-bottom: 10px;
 }
 
+.pembiasan ol {
+  padding-left: 30px;
+  text-align: justify;
+  /* margin-bottom: 0rem; */
+  font-size: 1.65rem;
+  font-weight: 100;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
 .desc1 {
   padding-right: 1px;
   margin-top: 5px;
@@ -585,6 +595,11 @@ tr:hover td {
   background-color: var(--primary1);
   text-align: center;
 }
+.endDat1 {
+  margin-top: 5px;
+  background-color: var(--primary);
+  text-align: center;
+}
 
 .explain3 span {
   background-color: var(--primary);
@@ -602,6 +617,7 @@ tr:hover td {
   text-align: center;
   margin-top: 10px;
 }
+
 .nomor1 h3 {
   background-color: var(--primary);
   text-align: center;
@@ -762,6 +778,17 @@ tr:hover td {
   border-radius: 10px;
   border-color: darkgrey;
   border-style: groove;
+}
+
+.pembiasan .snell {
+  background-color: var(--primary);
+  text-align: center;
+  margin-top: 10px;
+}
+.pembiasan .snell1 {
+  background-color: var(--primary1);
+  text-align: center;
+  margin-top: 10px;
 }
 
 .emodule .form {
@@ -1296,6 +1323,14 @@ footer .credit a {
     max-width: 340px;
     margin: 0;
   }
+
+  .formed-c .formed113 img {
+    border-style: groove;
+    border-color: darkgrey;
+    max-width: 450px;
+    margin: 0;
+  }
+
   .bayangan .bayangan1 img,
   .bayangan2 img {
     border-style: groove;
