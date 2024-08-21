@@ -304,6 +304,14 @@ body {
   margin-bottom: 1rem;
 }
 
+.Pedoman p {
+  text-align: justify;
+  /* margin-bottom: 0rem; */
+  font-size: 1.65rem;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
 .Pedoman .row .content p {
   margin-bottom: 0.8rem;
   font-size: 1.4rem;
@@ -435,6 +443,21 @@ tr:hover td {
   text-decoration-line: underline;
   font-style: italic;
 }
+.subjudul-p {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-decoration-line: underline;
+  font-style: italic;
+}
+.subjudul-p1 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-decoration-line: underline;
+  font-style: italic;
+}
+
 .emodule .pembiasan .subjudul4 {
   margin-top: 2rem;
   text-align: center;
@@ -546,6 +569,16 @@ tr:hover td {
 }
 
 .ccekung .cermincekung img {
+  float: right;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.ccekung1 .cermincekung1 img {
+  float: right;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.ccekung1 .cermincekung2 img {
   float: right;
   margin-left: 15px;
   margin-top: 10px;
@@ -810,9 +843,28 @@ tr:hover td {
   justify-content: center;
   align-items: center;
 }
+.ccekung1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .ccekung .cermincekung img {
   max-width: 450px;
+  border-radius: 10px;
+  border-color: darkgrey;
+  border-style: groove;
+}
+.ccekung1 .cermincekung1 img {
+  max-width: 240px;
+  max-height: 280px;
+  border-radius: 10px;
+  border-color: darkgrey;
+  border-style: groove;
+}
+.ccekung1 .cermincekung2 img {
+  max-width: 250px;
+  max-height: 280px;
   border-radius: 10px;
   border-color: darkgrey;
   border-style: groove;
@@ -1380,6 +1432,9 @@ footer .credit a {
   .ccekung {
     flex-wrap: wrap;
   }
+  .ccekung1 {
+    flex-wrap: wrap;
+  }
 
   .emodulepics2 {
     flex-wrap: wrap;
@@ -1471,6 +1526,16 @@ footer .credit a {
   }
 
   .ccekung .cermincekung img {
+    max-width: 420px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .ccekung1 .cermincekung1 img {
+    max-width: 420px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .ccekung1 .cermincekung2 img {
     max-width: 420px;
     margin-right: 0;
     margin-left: 0;
